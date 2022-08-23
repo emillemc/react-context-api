@@ -1,6 +1,5 @@
 import React, { useContext } from "react";
 
-
 import SignRoutes from "./SignRoutes";
 import OtherRoutes from "./OtherRoutes";
 import { AuthContext } from "../contexts/AuthContext";

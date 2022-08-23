@@ -7,7 +7,7 @@ const Home = () => {
 
   async function handleLogout() {
     Logout();
-    router("/")
+    router("/");
   }
 
   return (
