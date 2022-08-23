@@ -1,9 +1,9 @@
 export const typography = {
-  small: "9px",
-  body1: "12px",
-  body2: "14px",
-  h4: "16px",
-  h3: "20px",
-  h2: "24px",
-  h1: "32px",
+  small: "0.563rem",
+  body1: "0.75rem",
+  body2: "0.875rem",
+  h4: "1rem",
+  h3: "1.25rem",
+  h2: "1.5rem",
+  h1: "2rem",
 };
