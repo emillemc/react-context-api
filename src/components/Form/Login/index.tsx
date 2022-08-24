@@ -2,6 +2,7 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import { useAuth } from "../../../contexts/AuthContext";
+import Button from "../../Button";
 
 type FormValues = {
   email: string;
@@ -41,7 +42,7 @@ const FormLogin = () => {
           <input placeholder="password" type="password" {...register("password")} />
           {errors.password && <p>{errors.password.message}</p>}
         </div>
-        <button type="submit">Login</button>
+        <Button type="submit" title="Sign Up" />
       </form>
     </div>
   );

@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_URL
+  baseURL: import.meta.env.VITE_API_URL,
 });
 
 // Add a request interceptor
@@ -12,12 +12,12 @@ api.interceptors.request.use(
       config.headers = {
         Authorization: `Bearer ${token}`,
         Accept: "application/json",
-        "Content-Type": "application/json"
+        "Content-Type": "application/json",
       };
     } else {
       config.headers = {
         Accept: "application/json",
-        "Content-Type": "application/json"
+        "Content-Type": "application/json",
       };
     }
     return config;
@@ -25,19 +25,20 @@ api.interceptors.request.use(
   function (error) {
     // Do something with request error
     return Promise.reject(error);
-  }
+  },
 );
 
 // Add a response interceptor
 api.interceptors.response.use(
-  response => {
+  (response) => {
     if (response.status === 401) {
+      // console.log("bla");
     }
     return response;
   },
   function (error) {
     return Promise.reject(error);
-  }
+  },
 );
 
 export default api;
