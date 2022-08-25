@@ -43,9 +43,5 @@ export const AuthProvider: React.FC<Props> = ({ children }) => {
     verifyStorageToken();
   }, []);
 
-  return (
-    <AuthContext.Provider value={{ isAuthenticated, user, Login, Logout }}>
-      {children}
-    </AuthContext.Provider>
-  );
+  return <AuthContext.Provider value={{ isAuthenticated, user, Login, Logout }}>{children}</AuthContext.Provider>;
 };

@@ -7,9 +7,7 @@ interface AuthContextData {
   Logout(): void;
 }
 
-export const AuthContext = createContext<AuthContextData>(
-  {} as AuthContextData
-);
+export const AuthContext = createContext<AuthContextData>({} as AuthContextData);
 
 export function useAuth() {
   const context = useContext(AuthContext);

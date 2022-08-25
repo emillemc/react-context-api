@@ -14,15 +14,15 @@ export const Container = styled.div`
 `;
 
 export const Content = styled.div`
-  border: 2px solid ${colors.grayscale04};
-  padding: 48px 40px;
-  border-radius: 16px;
+  border: 0.125rem solid ${colors.grayscale04};
+  padding: 3rem 2.5rem;
+  border-radius: 1rem;
 
   .header {
-    margin-bottom: 40px;
+    margin-bottom: 2.5rem;
     h4 {
       font-size: ${typography.h4};
-      margin-bottom: 10px;
+      margin-bottom: 0.625rem;
       font-weight: 500;
       color: ${colors.grayscale02};
     }
